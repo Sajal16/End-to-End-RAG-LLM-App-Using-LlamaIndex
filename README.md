@@ -1,26 +1,69 @@
-## End to end RAG LLM App Using Llamaindex and OpenAI: Indexing and Querying Multiple PDF's
+**End-to-End RAG LLM Application using LlamaIndex**
 
-<div align="center">
+An End-to-End Retrieval-Augmented Generation (RAG) application that enables intelligent question answering over documents using Large Language Models and vector-based retrieval.
 
-<a href="https://www.youtube.com/watch?v=hH4WkgILUD4">
-  <img src="http://img.youtube.com/vi/hH4WkgILUD4/0.jpg" alt="End to end RAG LLM App Using Llamaindex and OpenAI: Indexing and Querying Multiple pdf's" width="400" />
-</a>
+This project demonstrates how to build a Document AI system capable of understanding and answering queries from uploaded PDFs by combining LlamaIndex, LLMs, embeddings, and vector search.
 
-</div>
+**Project Overview**
 
-In this video, we will build an end to end Retrieve and Generate Language Model application using LlamaIndex and OpenAI. 
+Large Language Models often suffer from hallucinations and lack of domain-specific knowledge.
+Retrieval-Augmented Generation (RAG) solves this by retrieving relevant information from external data sources before generating responses.
 
-We will index multiple PDF documents, store the indexes in a vector database, define a frontend search interface to query the index, and use OpenAI's powerful language models to generate relevant summaries by querying the index.
+This application:
 
-[OpenAI](https://openai.com/) has created groundbreaking language model APIs that can understand language, answer questions, summarize documents etc. 
+• Ingests PDF documents
+• Converts text into embeddings
+• Stores embeddings in a vector index
+• Retrieves relevant context for queries
+• Generates accurate answers using an LLM
 
-[LlamaIndex](https://llama.xyz/) builds upon these language models and allows you to index documents, store vector representations and generate answers by querying the vector index.
+The result is a context-aware AI assistant for document question answering.
 
-We will demonstrate:
+**Key Features**
 
-- Indexing multiple PDF documents 
-- Storing indexes in a vector database
-- Defining a streamlit frontend to search the index
-- Querying the index to generate relevant summaries and answers
+• End-to-End RAG pipeline implementation
+• PDF document ingestion and processing
+• Semantic search using embeddings
+• Context-aware response generation
+• Efficient document retrieval using vector index
+• Interactive query-based document QA system
 
-Overall, this project shows how you can build powerful generative apps by combining OpenAI APIs with vector indexing techniques provided by LlamaIndex!
+Tech Stack
+
+**Programming Language:
+**Python
+
+**Libraries & Frameworks:**
+LlamaIndex
+OpenAI / LLM APIs
+LangChain (if used)
+Sentence Transformers / Embeddings
+Data Processing
+PDF parsing
+Text chunking
+Vector indexing
+Development Tools
+Jupyter Notebook
+Git
+GitHub
+
+**Project Architecture**
+User Query
+     │
+     ▼
+Query Processing
+     │
+     ▼
+Vector Search (Embedding Similarity)
+     │
+     ▼
+Relevant Document Retrieval
+     │
+     ▼
+Context + User Query
+     │
+     ▼
+Large Language Model
+     │
+     ▼
+Generated Answer
